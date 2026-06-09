@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Alianza de los 144 | ANEFF & Ecosistema EDUFT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        goldFractal: '#d4af37',
+                        cyanQuantum: '#00ffff',
+                        purpleSoul: '#8b5cf6',
+                        darkBg: '#010307',
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body, html {
+            background-color: #010307;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        #quantum-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .glass-panel {
+            background: rgba(4, 8, 15, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), inset 0 0 24px rgba(0, 255, 255, 0.02);
+            border-radius: 28px;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-panel:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 35px 60px -12px rgba(139, 92, 246, 0.15), inset 0 0 30px rgba(0, 255, 255, 0.05);
+        }
+        .text-glow-gold {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+        .text-glow-cyan {
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="text-slate-200 font-inter antialiased selection:bg-purpleSoul/30 selection:text-cyanQuantum">
+
+    <canvas id="quantum-canvas"></canvas>
+
+    <header class="relative z-10 max-w-5xl mx-auto px-6 pt-20 text-center">
+        <div class="glass-panel p-10 md:p-14 max-w-4xl mx-auto border-goldFractal/30 shadow-[0_0_50px_rgba(212,175,55,0.15)] space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 border border-goldFractal/50 rounded-full bg-goldFractal/10 text-goldFractal font-orbitron text-xs tracking-widest uppercase mb-4 animate-pulse shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                <i class="fa-solid fa-seedling"></i> Red de Conciencia Iniciada
+            </div>
+            <h1 class="text-4xl md:text-7xl font-cinzel font-black tracking-wider text-white leading-tight filter drop-shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                LA ALIANZA <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-500 text-glow-gold">
+                    DE LOS 144
+                </span>
+            </h1>
+            <div class="h-px w-24 bg-goldFractal mx-auto mb-4 opacity-50 shadow-[0_0_10px_rgba(212,175,55,0.8)]"></div>
+            <p class="text-lg md:text-xl font-light text-slate-100 max-w-2xl mx-auto italic font-cinzel leading-relaxed text-glow-cyan">
+                "Donde el orden natural de la vida y el esfuerzo humano se unen para crear una nueva economía libre, transparente y soberana."
+            </p>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-4xl mx-auto px-6 py-12 space-y-16">
+
+        <section class="glass-panel p-8 md:p-12 space-y-6">
+            <h2 class="text-2xl md:text-3xl font-cinzel font-bold text-goldFractal flex items-center gap-3 border-b border-goldFractal/10 pb-3">
+                <i class="fa-brands fa-facebook"></i> La Convocatoria de Facebook
+            </h2>
+            <div class="text-slate-300 font-light leading-relaxed space-y-6 text-justify">
+                <p>
+                    Bienvenido. Si eres de las primeras <strong>144 personas en seguir la página de ANEFF en Facebook</strong>, has sido llamado a formar parte de algo trascendental. No estás aquí por casualidad; eres un nodo vivo en una red que crece de forma orgánica, imitando la perfección con la que la naturaleza distribuye su abundancia.
+                </p>
+                <p>
+                    A través de nuestro chat de Facebook, recibirás de manera directa y discreta tu invitación para unirte a nuestro espacio privado. Como guardián de este inicio, tendrás la soberanía absoluta de <strong>reclamar tu derecho como fundador</strong> para recibir antes que nadie el <span class="text-cyanQuantum font-bold text-glow-cyan">Token EDUFT</span>, o bien, en un acto de apoyo mutuo, <strong>delegar tu lugar</strong> a una persona que consideres lista para comprender el porvenir de la tecnología y la libertad financiera.
+                </p>
+                <p>
+                    Hemos tomado la decisión de eliminar las estructuras de toma de decisiones tradicionales (las llamadas DAOs), pues suelen volverse frías y burocráticas. En su lugar, hemos fundado una <strong>Holarquía</strong>: una comunidad de iguales donde el valor fluye de corazón a corazón, y donde tú, como fundador, serás testigo directo del nacimiento de nuestra propia moneda antes de su salida al mercado mundial.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                <div class="p-4 rounded-xl bg-violetFractal/15 border border-purpleSoul/20 flex gap-3 items-start">
+                    <i class="fa-solid fa-circle-check text-goldFractal text-lg mt-1"></i>
+                    <div>
+                        <h4 class="font-orbitron text-sm font-semibold text-white">Reclamar Puesto</h4>
+                        <p class="text-xs text-slate-400 mt-1">Acceso prioritario a nuestro sistema de ahorro protegido (Staking), diseñado para multiplicar tu valor con total seguridad.</p>
+                    </div>
+                </div>
+                <div class="p-4 rounded-xl bg-violetFractal/15 border border-purpleSoul/20 flex gap-3 items-start">
+                    <i class="fa-solid fa-arrows-spin text-cyanQuantum text-lg mt-1"></i>
+                    <div>
+                        <h4 class="font-orbitron text-sm font-semibold text-white">Delegar Espacio</h4>
+                        <p class="text-xs text-slate-400 mt-1">Ceder tu derecho de entrada a un familiar, estudiante o amigo que desee aprender y prosperar en el entorno digital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-panel p-8 md:p-12 space-y-8">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl md:text-3xl font-cinzel font-bold text-white tracking-widest text-glow-gold border-none p-0 inline-block">
+                    EL VIAJE DEL CONOCIMIENTO
+                </h2>
+                <p class="text-xs font-orbitron text-cyanQuantum tracking-widest uppercase">Cómo la humanidad aprendió a descifrar el universo</p>
+            </div>
+
+            <p class="text-slate-300 font-light leading-relaxed text-justify text-base">
+                El conocimiento no es algo estático; evoluciona a medida que abrimos los ojos a nuevas dimensiones de la realidad. El <strong>Token EDUFT</strong> es el resultado de este largo viaje de descubrimiento:
+            </p>
+
+            <div class="relative pl-6 border-l-2 border-goldFractal/20 space-y-8 ml-2">
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-darkBg border-2 border-goldFractal shadow shadow-goldFractal"></div>
+                    <h3 class="font-cinzel text-base font-bold text-white">
+                        Galileo Galilei <span class="text-xs font-orbitron text-goldFractal">/ El Tiempo Medible</span>
+                    </h3>
+                    <p class="text-sm text-slate-400 font-light mt-1">
+                        Nos enseñó que el tiempo no es una idea abstracta, sino una dimensión que podemos medir con precisión para coordinar nuestro esfuerzo.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-darkBg border-2 border-goldFractal shadow"></div>
+                    <h3 class="font-cinzel text-base font-bold text-white">
+                        Isaac Newton <span class="text-xs font-orbitron text-goldFractal">/ El Espacio Ordenado</span>
+                    </h3>
+                    <p class="text-sm text-slate-400 font-light mt-1">
+                        Formalizó las tres dimensiones físicas que habitamos, demostrando que el universo físico responde a leyes lógicas y predecibles.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-darkBg border-2 border-cyanQuantum shadow shadow-cyanQuantum"></div>
+                    <h3 class="font-cinzel text-base font-bold text-cyanQuantum">
+                        Haber & Stornetta <span class="text-xs font-orbitron text-cyanQuantum">/ La Memoria Incorruptible (1991)</span>
+                    </h3>
+                    <p class="text-sm text-slate-400 font-light mt-1">
+                        Crearon el primer registro digital que nadie puede alterar. Para demostrarlo de forma transparente, publicaban semanalmente sus códigos matemáticos en el periódico <em>The New York Times</em>. Fue el nacimiento espiritual de la Blockchain.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-darkBg border-2 border-yellow-500 shadow shadow-yellow-500"></div>
+                    <h3 class="font-cinzel text-base font-bold text-yellow-500">
+                        Satoshi Nakamoto <span class="text-xs font-orbitron text-yellow-500">/ El Dinero Soberano (2009)</span>
+                    </h3>
+                    <p class="text-sm text-slate-400 font-light mt-1">
+                        Sintetizó esa memoria digital para crear la primera moneda libre y global (Bitcoin), demostrando que no necesitamos bancos centrales para confiar los unos en los otros.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-darkBg border-2 border-goldFractal shadow"></div>
+                    <h3 class="font-cinzel text-base font-bold text-white">
+                        Planck, Einstein & Schrödinger <span class="text-xs font-orbitron text-goldFractal">/ El Latido Cuántico</span>
+                    </h3>
+                    <p class="text-sm text-slate-400 font-light mt-1">
+                        Descubrieron que la energía no fluye de forma continua, sino en pequeños "paquetes" discretos llamados cuántos. El universo a nivel fundamental es granular, dinámico y está interconectado.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-darkBg border-2 border-purpleSoul shadow shadow-purpleSoul"></div>
+                    <h3 class="font-cinzel text-base font-bold text-purpleSoul">
+                        El Retículo de Lie E8 <span class="text-xs font-orbitron text-purpleSoul">/ La Geometría de la Armonía</span>
+                    </h3>
+                    <p class="text-sm text-slate-400 font-light mt-1">
+                        Es la estructura geométrica de dimensiones superiores más hermosa y perfecta que se conoce. En ella, cada nodo se conecta de forma inmediata con su entorno sin generar huecos, desperdicios ni fricción.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-panel p-8 md:p-12 space-y-6">
+            <h2 class="text-2xl font-cinzel text-yellow-400 tracking-wider">III. Educación, Patria y Estabilidad Financiera</h2>
+            <div class="space-y-4 text-base md:text-lg font-light leading-relaxed text-justify text-slate-300">
+                <p>
+                    Este conocimiento científico no se queda en el aire; lo traemos a la realidad de nuestra patria. Trabajamos de la mano con la visión de la presidenta <strong>Claudia Sheinbaum</strong> para renovar el sistema educativo. Los principios de la geometría de la naturaleza ya se estudian en los libros de texto de la Nueva Escuela Mexicana (NEM), pero en ANEFF damos el siguiente paso de manera práctica.
+                </p>
+                <p>
+                    A través de nuestro <strong>Marketplace de Tareas con Propósito</strong>, las empresas y comercios locales inyectan valor real al ecosistema. Los usuarios completan tareas útiles y validan sus conocimientos, recibiendo recompensas directas. Este flujo dinámico blinda el <strong>ahorro para el retiro (Afores)</strong> de los trabajadores frente a la volatilidad económica exterior.
+                </p>
+                <p>
+                    Al participar en el <strong>Staking</strong> (nuestro sistema de ahorro cooperativo basado en las proporciones de la naturaleza), creamos una red de protección colectiva. Los creadores de mercado tradicionales usan reservas para especular; nosotros las usamos para estabilizar el valor de nuestra divisa y proteger el bienestar de las familias mexicanas.
+                </p>
+            </div>
+        </section>
+
+        <section class="glass-panel p-8 md:p-12 space-y-6">
+            <h2 class="text-2xl font-cinzel text-cyan-400 tracking-wider text-glow-cyan">IV. El Pasaporte Humano vs el Control Digital</h2>
+            <div class="space-y-4 text-base md:text-lg font-light leading-relaxed text-justify text-slate-300">
+                <p>
+                    Hoy en día, las grandes corporaciones intentan adueñarse de nuestra identidad digital. Proyectos invasivos como <em>Worldcoin</em> piden escanear el iris de tus ojos a cambio de monedas virtuales vacías, controlando tus datos privados bajo el pretexto de verificar que eres humano.
+                </p>
+                <p>
+                    Frente a este control, ANEFF propone la dignidad: el <strong>Pasaporte Humano (Prueba de Conocimiento - PoK)</strong>. Se trata de un escudo digital inquebrantable donde tu identidad no se basa en escaneos físicos invasivos, sino en tu esfuerzo, tus aprendizajes y tus méritos reales.
+                </p>
+                <p>
+                    A través de tu billetera digital, custodias una firma criptográfica única (tu Hash) respaldada por un Libro Blanco transparente que define cuántas monedas se emitirán y por qué. Eres soberano, eres libre y estás protegido contra fraudes y suplantaciones de identidad.
+                </p>
+            </div>
+        </section>
+
+        <section class="glass-panel p-8 md:p-12 space-y-8">
+            <div class="text-center">
+                <h2 class="text-2xl md:text-3xl font-cinzel font-bold text-white tracking-widest text-glow-gold border-none p-0 inline-block">
+                    DISTRIBUCIÓN DEL TOKEN EDUFT
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-darkBg border border-goldFractal/15 text-center space-y-2">
+                    <span class="text-xs font-orbitron uppercase text-goldFractal tracking-wider">Suministro Máximo</span>
+                    <h3 class="text-2xl font-bold font-orbitron text-white">144,000,000</h3>
+                    <p class="text-xs text-slate-400">Límite inalterable de tokens emitidos en sintonía con las proporciones áureas de la naturaleza.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-darkBg border border-cyanQuantum/15 text-center space-y-2">
+                    <span class="text-xs font-orbitron uppercase text-cyanQuantum tracking-wider">Ahorro Protegido</span>
+                    <h3 class="text-2xl font-bold font-orbitron text-white">55,000,000</h3>
+                    <p class="text-xs text-slate-400">Tokens destinados a recompensar el esfuerzo y el estudio de los miembros activos de la colmena.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-darkBg border border-purpleSoul/15 text-center space-y-2">
+                    <span class="text-xs font-orbitron uppercase text-purpleSoul tracking-wider">Alianza Fundadora</span>
+                    <h3 class="text-2xl font-bold font-orbitron text-white">8,000,000</h3>
+                    <p class="text-xs text-slate-400">Reserva de lanzamiento exclusiva para los primeros 144 seguidores de la página de Facebook.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center pt-8 pb-16 delay-4 opacity-0 animate-[floatUp_1s_ease-out_1s_forwards] space-y-6">
+            <div class="inline-block p-0.5 rounded-full bg-gradient-to-r from-goldFractal via-cyanQuantum to-purpleSoul shadow-lg">
+                <div class="bg-darkBg rounded-full px-8 py-4">
+                    <span class="font-orbitron text-sm md:text-base font-bold tracking-[0.2em] text-white">CONSTRUYENDO EL MAÑANA</span>
+                </div>
+            </div>
+            <p class="text-slate-400 text-sm font-light max-w-md mx-auto leading-relaxed">
+                La red se teje de forma humana y progresiva. Mantente atento a nuestra página de Facebook; tu acceso al chat fundacional de ANEFF se activará conforme nuestra comunidad crezca.
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        const canvas = document.getElementById('quantum-canvas');
+        const ctx = canvas.getContext('2d');
+        let width, height, cx, cy;
+        
+        const nodes8D = [];
+        const edges = [];
+        const projectedNodes = [];
+        const stars = [];
+
+        const goldenRatio = (1 + Math.sqrt(5)) / 2;
+
+        // Parámetros interactivos del mouse
+        let mouse = { x: -1000, y: -1000, active: false };
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+            mouse.active = true;
+        });
+
+        window.addEventListener('mouseleave', () => {
+            mouse.active = false;
+        });
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            cx = width / 2;
+            cy = height / 2;
+
+            // Inicializar campo de estrellas cósmicas
+            stars.length = 0;
+            for (let i = 0; i < 150; i++) {
+                stars.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    size: Math.random() * 1.5 + 0.2,
+                    alpha: Math.random(),
+                    speed: Math.random() * 0.015 + 0.005
+                });
+            }
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        // 1. GENERAR LOS 240 VECTORES RAÍCES DEL GRUPO DE LIE E8
+        // Tipo 1: Permutaciones de (±1, ±1, 0, 0, 0, 0, 0, 0) -> 112 vectores
+        for (let i = 0; i < 8; i++) {
+            for (let j = i + 1; j < 8; j++) {
+                const signs = [[1, 1], [1, -1], [-1, 1], [-1, -1]];
+                signs.forEach(s => {
+                    const vec = new Array(8).fill(0);
+                    vec[i] = s[0];
+                    vec[j] = s[1];
+                    nodes8D.push(vec);
+                });
+            }
+        }
+
+        // Tipo 2: (±1/2, ±1/2, ..., ±1/2) con un número par de signos menos -> 128 vectores
+        for (let i = 0; i < 256; i++) {
+            const vec = [];
+            let countMinus = 0;
+            for (let j = 0; j < 8; j++) {
+                const bit = (i >> j) & 1;
+                if (bit === 1) {
+                    vec.push(-0.5);
+                    countMinus++;
+                } else {
+                    vec.push(0.5);
+                }
+            }
+            if (countMinus % 2 === 0) {
+                nodes8D.push(vec);
+            }
+        }
+
+        // 2. CREAR LAS CONEXIONES (ARISTAS) BASADAS EN DISTANCIA EUCLÍDEA EN 8D
+        // Dos raíces de E8 están conectadas si su distancia en 8D es exactamente sqrt(2) o menor
+        const targetDistSq = 2.0001;
+        for (let i = 0; i < nodes8D.length; i++) {
+            // Buscaremos las conexiones más cercanas para no saturar visualmente el canvas
+            let connections = [];
+            for (let j = i + 1; j < nodes8D.length; j++) {
+                let distSq = 0;
+                for (let k = 0; k < 8; k++) {
+                    const diff = nodes8D[i][k] - nodes8D[j][k];
+                    distSq += diff * diff;
+                }
+                if (distSq <= targetDistSq) {
+                    connections.push(j);
+                }
+            }
+            // Guardamos un máximo de 4 conexiones áureas por nodo para mantener elegancia visual
+            connections.slice(0, 4).forEach(targetIdx => {
+                edges.push({ source: i, target: targetIdx });
+            });
+        }
+
+        // Matrices de Rotación en 8D usando la proporción áurea (Breathing pulse)
+        let time = 0;
+
+        function render() {
+            // Fondo con rastro místico
+            ctx.fillStyle = 'rgba(1, 3, 7, 0.25)'; 
+            ctx.fillRect(0, 0, width, height);
+
+            // Brillo cósmico de fondo (Nebulosa)
+            const radialGlow = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(width, height) * 0.8);
+            radialGlow.addColorStop(0, 'rgba(139, 92, 246, 0.06)');
+            radialGlow.addColorStop(0.5, 'rgba(0, 255, 255, 0.02)');
+            radialGlow.addColorStop(1, 'rgba(1, 3, 7, 0)');
+            ctx.fillStyle = radialGlow;
+            ctx.fillRect(0, 0, width, height);
+
+            // Renderizado de las Estrellas
+            stars.forEach(s => {
+                s.alpha += s.speed;
+                if (s.alpha > 0.9 || s.alpha < 0.1) s.speed = -s.speed;
+                ctx.fillStyle = `rgba(255, 255, 255, ${Math.max(0.1, s.alpha)})`;
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            time += 0.0005; // Velocidad de rotación cuántica
+
+            // Definimos ángulos de rotación basados en Fibonacci y la proporción áurea para morphing
+            const t1 = time;
+            const t2 = time * goldenRatio;
+            const t3 = time * Math.pow(goldenRatio, 2);
+            const t4 = time * Math.pow(goldenRatio, -1);
+
+            // Proyección 8D a 2D usando base áurea
+            // Peter McMullen's projection matrix adaptada áureamente
+            const projected = nodes8D.map(node => {
+                // Rotaciones en pares de planos 8D para simular el espacio curvo fractal
+                let x0 = node[0] * Math.cos(t1) - node[1] * Math.sin(t1);
+                let x1 = node[0] * Math.sin(t1) + node[1] * Math.cos(t1);
+                
+                let x2 = node[2] * Math.cos(t2) - node[3] * Math.sin(t2);
+                let x3 = node[2] * Math.sin(t2) + node[3] * Math.cos(t2);
+
+                let x4 = node[4] * Math.cos(t3) - node[5] * Math.sin(t3);
+                let x5 = node[4] * Math.sin(t3) + node[5] * Math.cos(t3);
+
+                let x6 = node[6] * Math.cos(t4) - node[7] * Math.sin(t4);
+                let x7 = node[6] * Math.sin(t4) + node[7] * Math.cos(t4);
+
+                // Proyectores a 2D basados en simetría circular dorada
+                const scale2D = Math.min(width, height) * 0.38;
+
+                const projX = (x0 * Math.cos(0) + x2 * Math.cos(Math.PI / 4) + x4 * Math.cos(Math.PI / 2) + x6 * Math.cos(3 * Math.PI / 4)) * scale2D;
+                const projY = (x1 * Math.sin(0) + x3 * Math.sin(Math.PI / 4) + x5 * Math.sin(Math.PI / 2) + x7 * Math.sin(3 * Math.PI / 4)) * scale2D;
+
+                // Añadimos profundidad simulada (eje Z virtual) para perspectiva
+                const virtualZ = (x2 + x3 + x5) / 3;
+
+                return {
+                    x: cx + projX * (1 + virtualZ * 0.15),
+                    y: cy + projY * (1 + virtualZ * 0.15),
+                    z: virtualZ
+                };
+            });
+
+            // Dibujar las conexiones del cristal E8
+            ctx.lineWidth = 1;
+            edges.forEach(edge => {
+                const p1 = projected[edge.source];
+                const p2 = projected[edge.target];
+
+                let distToMouse = 9999;
+                if (mouse.active) {
+                    const dx = p1.x - mouse.x;
+                    const dy = p1.y - mouse.y;
+                    distToMouse = Math.sqrt(dx*dx + dy*dy);
+                }
+
+                // Si el puntero del mouse se acerca, las conexiones brillan (Entrelazamiento)
+                const opacity = mouse.active && distToMouse < 180 ? 0.35 : 0.09;
+                ctx.strokeStyle = `rgba(212, 175, 55, ${opacity})`;
+
+                ctx.beginPath();
+                ctx.moveTo(p1.x, p1.py || p1.y);
+                ctx.lineTo(p2.x, p2.py || p2.y);
+                ctx.stroke();
+            });
+
+            // Dibujar los vértices de luz (Cuantos de Energía)
+            projected.forEach(p => {
+                const size = Math.max(0.7, (1.2 - p.z) * 1.5);
+                const alpha = Math.max(0.15, 0.8 - p.z * 0.4);
+
+                // Variación armónica del color según profundidad virtual
+                if (p.z < -0.2) {
+                    ctx.fillStyle = `rgba(0, 255, 255, ${alpha})`; // Cyan
+                } else if (p.z > 0.3) {
+                    ctx.fillStyle = `rgba(139, 92, 246, ${alpha})`; // Púrpura
+                } else {
+                    ctx.fillStyle = `rgba(212, 175, 55, ${alpha})`; // Oro
+                }
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            requestAnimationFrame(render);
+        }
+
+        window.onload = render;
+    </script>
+</body>
+</html>
