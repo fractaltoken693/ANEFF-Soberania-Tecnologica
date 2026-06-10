@@ -16,6 +16,7 @@
                         cyanQuantum: '#00ffff',
                         purpleSoul: '#8b5cf6',
                         darkBg: '#010307',
+                        violetFractal: '#4c1d95',
                     },
                     fontFamily: {
                         cinzel: ['Cinzel', 'serif'],
@@ -59,6 +60,10 @@
         }
         .text-glow-cyan {
             text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        @keyframes floatUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
@@ -136,7 +141,7 @@
             </div>
         </section>
 
-        <!-- PANEL 2: EL MAPA DE LAS DIMENSIONES (EL VIAJE DEL CONOCIMIENTO) -->
+        <!-- PANEL 2: EL MAPA DE LAS DIMENSIONES -->
         <section class="glass-panel p-8 md:p-12 space-y-8">
             <div class="text-center space-y-2">
                 <h2 class="text-2xl md:text-3xl font-cinzel font-bold text-white tracking-widest text-glow-gold border-none p-0 inline-block">
@@ -255,7 +260,7 @@
                         <strong>Trato equitativo del tráfico:</strong> Que los proveedores de servicios de internet transporten todos los datos de manera imparcial, sin bloquear, ralentizar o favorecer ciertas aplicaciones, contenidos o servicios sobre otros.
                     </li>
                     <li>
-                        <strong>Litbertad de elección:</strong> Que sean los propios usuarios quienes decidan qué contenidos y aplicaciones consumen, y no las grandes empresas proveedoras de telecomunicaciones.
+                        <strong>Libertad de elección:</strong> Que sean los propios usuarios quienes decidan qué contenidos y aplicaciones consumen, y no las grandes empresas proveedoras de telecomunicaciones.
                     </li>
                     <li>
                         <strong>Protección de derechos digitales:</strong> Salvaguardar la privacidad, la libertad de expresión y evitar la censura arbitraria o bloqueos injustificados en línea.
@@ -303,19 +308,70 @@
             </div>
         </section>
 
+        <!-- PANEL 6: LANZAMIENTO Y EXPANSIÓN ORGÁNICA (REFERIDOS) -->
+        <section class="glass-panel p-8 md:p-12 space-y-8 relative overflow-hidden">
+            <!-- Deco de fondo -->
+            <div class="absolute -right-20 -top-20 w-64 h-64 bg-cyanQuantum/5 rounded-full blur-3xl"></div>
+            
+            <div class="text-center space-y-4 relative z-10">
+                <h2 class="text-2xl md:text-3xl font-cinzel font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyanQuantum to-purpleSoul tracking-widest uppercase text-glow-cyan">
+                    La Expansión Fractal: El Salto a los 236
+                </h2>
+                <p class="text-slate-400 font-light max-w-2xl mx-auto italic font-cinzel">
+                    "La naturaleza no crece por aglomeración caótica, sino por ramificación consciente y proporcionada."
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
+                <div class="space-y-4 text-base md:text-lg font-light leading-relaxed text-justify text-slate-300">
+                    <p>
+                        Una vez consolidado el núcleo semilla de la <strong>Alianza de los 144</strong>, el ecosistema no se abrirá al mercado tradicional de forma abrupta ni especulativa. El crecimiento debe respetar las leyes de la geometría sagrada. Por ello, la siguiente fase de lanzamiento se rige por un sistema de referidos de confianza, expandiendo la red armónicamente hacia la siguiente proporción de validación: <strong>La fase de los 236</strong>.
+                    </p>
+                    <p>
+                        No se trata de un modelo de marketing invasivo, sino de una <strong>propagación orgánica de nodo a nodo</strong>. Cada uno de los 144 fundadores, tras haber demostrado su compromiso y comprensión de esta tecnología soberana, recibirá el privilegio de invitar a nuevos integrantes a la red de forma escalonada. Esta cuidadosa transición asegura que la comunidad crezca manteniendo su integridad, su propósito educativo y su resistencia estructural, garantizando que el valor fluya horizontalmente hacia quienes realmente sostienen y construyen el ecosistema.
+                    </p>
+                </div>
+                
+                <div class="p-8 rounded-3xl bg-gradient-to-br from-darkBg to-[#0a0f1a] border border-cyanQuantum/20 shadow-[0_0_30px_rgba(0,255,255,0.05)] text-center relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyanQuantum/0 via-cyanQuantum/5 to-cyanQuantum/0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <h3 class="font-orbitron text-white text-lg mb-6 tracking-wider">Crecimiento Estructural</h3>
+                    
+                    <div class="flex flex-col items-center justify-center space-y-4">
+                        <div class="w-24 h-24 rounded-full border border-goldFractal flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                            <span class="text-3xl font-black font-orbitron text-goldFractal">144</span>
+                        </div>
+                        <div class="h-8 w-px bg-gradient-to-b from-goldFractal to-cyanQuantum"></div>
+                        <div class="w-32 h-32 rounded-full border-2 border-cyanQuantum flex items-center justify-center shadow-[0_0_30px_rgba(0,255,255,0.3)] bg-cyanQuantum/5">
+                            <div class="text-center">
+                                <span class="text-4xl font-black font-orbitron text-cyanQuantum text-glow-cyan">236</span>
+                                <span class="block text-[10px] uppercase tracking-widest text-slate-400 mt-1">Nodos Expansivos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- PIE DE PÁGINA Y ESTADO -->
-        <footer class="text-center pt-8 pb-16 delay-4 opacity-0 animate-[floatUp_1s_ease-out_1s_forwards] space-y-6">
+        <footer class="text-center pt-8 pb-16 space-y-12">
             <div class="inline-block p-0.5 rounded-full bg-gradient-to-r from-goldFractal via-cyanQuantum to-purpleSoul shadow-lg">
                 <div class="bg-darkBg rounded-full px-8 py-4">
                     <span class="font-orbitron text-sm md:text-base font-bold tracking-[0.2em] text-white">CONSTRUYENDO EL MAÑANA</span>
                 </div>
             </div>
             
-            <p class="text-slate-300 text-sm font-light max-w-2xl mx-auto leading-relaxed text-justify md:text-center italic px-6 border-l-2 border-goldFractal/30 bg-gradient-to-r from-goldFractal/5 to-transparent py-4 rounded-r-xl">
+            <div class="text-slate-300 text-sm font-light max-w-2xl mx-auto leading-relaxed text-justify md:text-center italic px-6 border-l-2 border-goldFractal/30 bg-gradient-to-r from-goldFractal/5 to-transparent py-4 rounded-r-xl">
                 Agradecemos profundamente a cada mexicana y mexicano de temple inquebrantable y visión soberana que decida dar un paso al frente para liderar este cambio nacional. Vuestra devoción por el fomento a la educación de proyectos criptoeconómicos es la llave dorada que abre las puertas del porvenir, sembrando una semilla cuántica y consciente que ayudará a nuestra sociedad a trascender la conciencia lineal y adentrarse con paso firme en nuevos mundos de libertad, justicia y abundancia compartida. En esta tierra de raíces sagradas y horizontes cósmicos, vuestro esfuerzo es el nuevo fuego que ilumina el sendero. ¡Gracias por sembrar el mañana en la tierra de nuestro origen y guiar la evolución!
-            </p>
+            </div>
             
-            <p class="text-slate-500 text-xs font-orbitron tracking-widest pt-4">
+            <!-- Agradecimiento Profundo, Culto y Reflexivo Final -->
+            <div class="border-t border-white/5 pt-10">
+                <p class="text-slate-400 text-sm md:text-base font-light max-w-3xl mx-auto leading-loose text-justify italic font-cinzel px-6">
+                    "Más allá del código y la cifra, lo que aquí gestamos es el renacimiento de una hermandad que ha comprendido que la verdadera riqueza es, en esencia, la libertad compartida. A ti, que has recorrido este manifiesto con la mente despierta y el corazón dispuesto, te extendemos un reconocimiento profundo. No eres solo un observador de esta época de transición, sino el artífice de un nuevo paradigma donde el conocimiento es el único activo que, al entregarse, se multiplica. Que tu caminar en esta Alianza sea guiado por la claridad y la nobleza del espíritu, pues es en tu voluntad, unida a la nuestra, donde reside la fuerza para transformar el porvenir en un presente soberano. Con genuina humildad y firmeza, agradecemos que el destino haya trazado este encuentro. Gracias por ser, por creer y, sobre todo, por atreverte a construir lo inaudito."
+                </p>
+            </div>
+            
+            <p class="text-slate-500 text-xs font-orbitron tracking-widest pt-8">
                 La red se teje de forma humana y progresiva. Mantente atento a nuestra página de Facebook; tu acceso al chat fundacional de ANEFF se activará conforme nuestra comunidad crezca.
             </p>
         </footer>
